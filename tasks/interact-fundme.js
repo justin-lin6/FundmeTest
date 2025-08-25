@@ -44,3 +44,5 @@ task("interact-fundme", "interact with FundMe contract")
       `Balance of second account ${secondAccountAccount.address} is: ${secondAccountAccountBalanceInFundMe}`
     );
   });
+
+module.exports = {};

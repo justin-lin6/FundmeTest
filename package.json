@@ -4,7 +4,6 @@
   "author": "justin-lin6 <340289914@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "@chainlink/contracts": "^1.4.0",
     "@chainlink/env-enc": "^1.0.5",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.0",
@@ -17,9 +16,11 @@
     "@typechain/hardhat": "^9.0.0",
     "chai": "^4.2.0",
     "dotenv": "^17.2.1",
-    "ethers": "^6.4.0",
+    "ethers": "^6.15.0",
     "hardhat": "2.22.2",
-    "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-deploy": "0.12.4",
+    "hardhat-deploy-ethers": "0.4.2",
+    "hardhat-gas-reporter": "^2.2.0",
     "solidity-coverage": "^0.8.0",
     "typechain": "^8.3.0",
     "undici": "^7.14.0"
@@ -27,7 +28,9 @@
   "scripts": {
     "test": "hardhat test",
     "coverage": "hardhat coverage",
-    "compile": "hardhat compile",
-    "deploy": "hardhat run scripts/deployFundMe.js --network sepolia"
+    "compile": "hardhat compile"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.4.0"
   }
 }
